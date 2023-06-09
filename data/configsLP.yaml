@@ -1,0 +1,16 @@
+model:
+  - ViT-B/32
+  - RN50
+random_seed: None
+k_shots:
+  - 32
+epoch: 1000
+train_loc: "Dataset/deepfake"
+test_loc : "Dataset/deepfake"
+weight_loc: "model_checkpoint"
+result_loc: "Result"
+result_name: "result.csv"
+
+prompts: 
+  real: "This is a real image"
+  fake: "This is a fake image"
